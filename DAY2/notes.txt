@@ -1,0 +1,46 @@
+The alert, confirm, and prompt methods are built-in browser functions in JavaScript used to interact with
+ users through modal dialog boxes. These methods are synchronous, meaning they pause all script execution and 
+ prevent the user from interacting with the rest of the webpage until the dialog is explicitly dismissed.
+
+--> Alert Box (alert()): This method displays a simple popup window containing a specified message and 
+a single "OK" button. Its primary purpose is to broadcast information, deliver warnings, or ensure the user 
+reads a specific piece of text before proceeding. Because it only offers one interaction option, it does not 
+return any meaningful value to the script (it returns undefined) and simply resumes code execution once the user
+ clicks "OK".
+
+--> Confirm Box (confirm()): This dialog presents a message alongside two buttons: "OK" and "Cancel", 
+making it ideal for verifying user intentions before executing a critical action, such as deleting a file or 
+navigating away from a page. When the user interacts with the box, the method returns a boolean value—evaluating 
+to true if "OK" is clicked, and false if "Cancel" is clicked or the dialog is closed. 
+This boolean return allows developers to use conditional logic (if/else statements) to direct the flow of 
+the program based on the user's explicit choice.
+
+--> Prompt Box (prompt()): Designed to gather brief text input from the user, this method displays a message, a 
+text input field, an "OK" button, and a "Cancel" button. It takes two optional arguments: the message to display
+ and a default placeholder value for the input field. If the user types a response and clicks "OK",
+ the method returns the entered text as a string. If the user clicks "Cancel" or closes the window without confirming, 
+ it returns null. Developers must write logic to handle both valid string inputs and null cases to prevent downstream script errors.\
+
+
+
+JavaScript data types are divided into two main categories: **Primitive types** (which store a single, immutable value) and **Reference types** (which store collections of data).
+
+## Primitive Data Types
+
+There are seven primitive types. When you manipulate a primitive, you are working directly with its actual value.
+
+* **String:** Textual data wrapped in single quotes, double quotes, or backticks. (e.g., `"Hello"`, `'World'`, ``Total: ${sum}``)
+* **Number:** Represents both integer and floating-point decimal numbers. It also includes special numeric values like `Infinity` and `NaN` (Not-a-Number). (e.g., `42`, `3.14`)
+* **Boolean:** A logical entity having only two values: `true` or `false`.
+* **Undefined:** The default value automatically assigned to a variable that has been declared but has not yet been given a value.
+* **Null:** The intentional, explicit absence of any object value. You assign this manually to clear a variable.
+* **Symbol:** A completely unique and immutable identifier, often used to create hidden or internal object properties (introduced in ES6).
+* **BigInt:** Used to safely store and operate on massive integers that exceed the safe limit of the standard `Number` type (numbers larger than `9007199254740991`).
+
+## Reference Data Types
+
+Fundamentally, there is only one reference type in JavaScript: the **Object**. However, it takes on several different built-in forms. Instead of holding the actual data, variables hold a "reference" (or pointer) to where the data is stored in memory.
+
+* **Object Literal:** A collection of related data stored as comma-separated key-value pairs. (e.g., `{ name: "Alex", role: "admin" }`)
+* **Array:** An ordered, numbered list of values. Under the hood, arrays are just a special type of object. (e.g., `["apple", "banana", "cherry"]`)
+* **Function:** A reusable block of code. In JavaScript, functions are "first-class citizens," meaning they are treated as objects and can be assigned to variables or passed as arguments.
