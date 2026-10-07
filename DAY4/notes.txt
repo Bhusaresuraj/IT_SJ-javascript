@@ -1,0 +1,15 @@
+
+
+
+Operators in Javascript
+
+
+| Operator | Meaning              | Example   | Same as      |
+| -------- | -------------------- | --------- | ------------ |
+| `=`      | Assign               | `x = 10`  | `x = 10`     |
+| `+=`     | Add and assign       | `x += 5`  | `x = x + 5`  |
+| `-=`     | Subtract and assign  | `x -= 5`  | `x = x - 5`  |
+| `*=`     | Multiply and assign  | `x *= 5`  | `x = x * 5`  |
+| `/=`     | Divide and assign    | `x /= 5`  | `x = x / 5`  |
+| `%=`     | Remainder and assign | `x %= 5`  | `x = x % 5`  |
+| `**=`    | Power and assign     | `x **= 2` | `x = x ** 2` |
