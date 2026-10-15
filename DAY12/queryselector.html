@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 class="demo">Hello world</h1>
+    <p class="demo">Hello world</p>
+    <h2 class="demo">Hello world</h2>
+    <button onmouseover="changecolor()">Submit</button>
+    <script>
+        function changecolor()
+        {
+            let data =document.querySelectorAll(".demo")
+            data[0].style.color="red";
+            data[1].style.backgroundColor="yellow";
+            data[2].style.border="2px solid black";
+        }
+    </script>
+</body>
+</html>

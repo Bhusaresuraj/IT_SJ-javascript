@@ -1,0 +1,94 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suraj</title>
+
+    <style>
+        body {
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 300px;
+            padding: 20px;
+            border: 2px solid black;
+            border-radius: 10px;
+        }
+
+        input {
+            text-align: center;
+            margin: 10px;
+            padding: 10px;
+            border: 1px solid black;
+            width: 90%;
+            box-sizing: border-box;
+        }
+
+        button {
+            margin-top: 10px;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <form class="form" onsubmit="alertmessage(event)">
+        <label for="name">Name</label>
+        <input type="text" id="name" placeholder="Enter your name" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="Enter your email" required>
+
+        <label for="password">Password</label>
+        <input type="password" id="password" placeholder="Enter your password" required>
+
+        <button type="submit">Submit</button>
+    </form>
+
+    <form action="" class="form">
+        <label for="">enter your name</label>
+        <input type="text" id="name" placeholder="Enter your name" required onkeydown="keyDown()" >
+
+        <label for="">enter your email</label>
+        <input type="email" id="email" placeholder="Enter your email" required  onkeyup="keyUp()">
+
+        <label for="">enter your password</label>
+        <input type="password" id="password" placeholder="Enter your password" required onkeydown="keyDown()" >
+
+        <button type="submit">Submit</button>
+    </form>
+
+
+    <script>
+        function alertmessage(event) {
+            event.preventDefault();
+            alert("the data has been submited");
+            console.log("the data has been collected here thanks");
+
+
+            function keyDown()
+            {
+                alert("hello")
+            }
+
+            function keyUp()
+            {
+                alert("hii")
+            }
+
+
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .form{
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            width: 250px;
+            margin: auto;
+            padding: 20px;
+            border-radius: 20px;
+        }
+        .form input{
+            margin: 10px;
+            padding: 5px;
+            border-radius: 5px;
+            border: none;
+            outline: none;    
+        }
+        .form button{
+            margin: 10px;
+            padding: 5px;
+            border-radius: 5px;
+            border: none;
+            outline: none;
+        }
+    </style>
+</head>
+<body>
+    <form action="" class="form">
+        <label for="">Enter you name</label>
+        <input type="text" name="" id="getname" placeholder="Enter Your Name"><br>
+        <label for="">Enter Your Password</label>
+        <input type="password" name="" id="" placeholder="Enter Your Password"><br>
+       <button type="submit" onclick="data()">Login</button>
+    </form>
+
+
+    <script>
+        function data()
+        {
+            event.preventDefault();
+            let getname=document.getElementById("getname").value;
+            console.log(getname);
+            let name=prompt("Enter your name");
+            document.getElementById("getname").value=name;
+            alert("Hello your name is " + getname);
+        }
+    </script>
+</body>
+</html>

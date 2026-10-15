@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <button id="btn">Enter Name</button>
+    <button id="doubleclick">Double click me!</button>
+    <!-- <script>
+        function demo() {
+            let name = prompt("Enter your name");
+            alert("Hello " + name);
+        }
+    </script> -->
+    <script>
+        btn.addEventListener("click", function(){
+            let name= prompt("enter you name")
+            alert("Hello " + name);
+        });
+        doubleclick.addEventListener("dblclick", function(){
+            alert("button double clicked");
+        });
+    </script>
+
+</body>
+</html>
